@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login | Meu Super Site</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/temas.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
+</head>
+<body class="login-body">
+  <main class="login-container">
+    <section class="login-card">
+      <h2>Entrar no Sistema</h2>
+      <form id="formLogin">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required placeholder="ex: usuario@email.com" />
+
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" name="senha" required placeholder="Digite sua senha" />
+
+        <button type="submit">Entrar</button>
+
+        <p class="login-msg" id="loginMsg"></p>
+      </form>
+      <a href="index.html" class="voltar-link">← Voltar ao início</a>
+    </section>
+  </main>
+
+  <script src="js/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Carrinho | Meu Super Site</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/temas.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">🛒 Seu Carrinho</div>
+      <ul class="nav-links">
+        <li><a href="produtos.html">Catálogo</a></li>
+        <li><a href="perfil.html">Perfil</a></li>
+        <li><a href="index.html">Início</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="carrinho-container">
+    <h1>Seu Carrinho</h1>
+    <table class="tabela-carrinho" id="tabelaCarrinho">
+      <thead>
+        <tr>
+          <th>Produto</th>
+          <th>Preço Unit.</th>
+          <th>Quantidade</th>
+          <th>Subtotal</th>
+          <th>Remover</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Produtos adicionados serão aqui -->
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3" class="total-text">Total:</td>
+          <td colspan="2" id="totalCompra">R$ 0,00</td>
+        </tr>
+      </tfoot>
+    </table>
+    <button id="finalizarCompra" class="btn-finalizar" disabled>Finalizar Compra</button>
+  </main>
+
+  <script src="js/carrinho.js"></script>
+</body>
+</html>

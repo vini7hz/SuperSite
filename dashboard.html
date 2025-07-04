@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dashboard | Meu Super Site</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/temas.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">📊 Dashboard</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="carrinho.html">Carrinho</a></li>
+        <li><a href="perfil.html">Perfil</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="dashboard-container">
+    <h1>Visão Geral do Sistema</h1>
+
+    <section class="cards-estatisticas">
+      <div class="card-estatistica">
+        <h2 id="totalUsuarios">0</h2>
+        <p>Usuários Cadastrados</p>
+      </div>
+      <div class="card-estatistica">
+        <h2 id="totalProdutos">0</h2>
+        <p>Produtos Disponíveis</p>
+      </div>
+      <div class="card-estatistica">
+        <h2 id="vendasHoje">0</h2>
+        <p>Vendas Hoje</p>
+      </div>
+      <div class="card-estatistica">
+        <h2 id="receitaMensal">R$ 0,00</h2>
+        <p>Receita Mensal</p>
+      </div>
+    </section>
+
+    <section class="graficos">
+      <div class="grafico-container">
+        <h3>Vendas por Categoria</h3>
+        <canvas id="graficoCategorias"></canvas>
+      </div>
+      <div class="grafico-container">
+        <h3>Receita Últimos 6 Meses</h3>
+        <canvas id="graficoReceita"></canvas>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

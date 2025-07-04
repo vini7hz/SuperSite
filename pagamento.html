@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pagamento | Meu Super Site</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/temas.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">💳 Pagamento</div>
+      <ul class="nav-links">
+        <li><a href="carrinho.html">Carrinho</a></li>
+        <li><a href="index.html">Início</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="pagamento-container">
+    <h1>Finalizar Compra</h1>
+
+    <section class="resumo-pedido" id="resumoPedido">
+      <h2>Resumo do Pedido</h2>
+      <ul id="listaResumo"></ul>
+      <p class="total-pedido">Total: <strong id="totalCompra">R$ 0,00</strong></p>
+    </section>
+
+    <section class="pagamento-info">
+      <h2>Informações para pagamento via Pix</h2>
+      <p>Chave Pix: <strong>11860640990</strong></p>
+      <p>Nome: <strong>VINICIUS G TEIXEIRA</strong></p>
+      <p>Cidade: <strong>TIJUCAS</strong></p>
+      <canvas id="qrCodePix"></canvas>
+    </section>
+
+    <section class="dados-comprador">
+      <h2>Seus dados</h2>
+      <form id="formPagamento">
+        <label for="nomeComprador">Nome Completo</label>
+        <input type="text" id="nomeComprador" name="nomeComprador" required placeholder="Seu nome completo" />
+
+        <label for="emailComprador">E-mail</label>
+        <input type="email" id="emailComprador" name="emailComprador" required placeholder="seu@email.com" />
+
+        <button type="submit" class="btn-pagar">Confirmar Pagamento</button>
+      </form>
+      <p id="msgPagamento" class="msg-pagamento"></p>
+    </section>
+  </main>
+
+  <script src="js/pagamento.js"></script>
+</body>
+</html>
