@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Registro | Meu Super Site</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <main class="registro-container">
+    <h1>Crie sua Conta</h1>
+    <form id="formRegistro">
+      <label for="nome">Nome Completo</label>
+      <input type="text" id="nome" required placeholder="Seu nome completo" />
+
+      <label for="email">E-mail</label>
+      <input type="email" id="email" required placeholder="seu@email.com" />
+
+      <label for="senha">Senha</label>
+      <input type="password" id="senha" required placeholder="********" />
+
+      <label for="confirmarSenha">Confirmar Senha</label>
+      <input type="password" id="confirmarSenha" required placeholder="********" />
+
+      <button type="submit" class="btn-registrar">Registrar</button>
+    </form>
+    <p>Já tem conta? <a href="login.html">Faça login</a></p>
+    <p id="msgRegistro" class="msg-registro"></p>
+  </main>
+  <script src="js/registro.js"></script>
+</body>
+</html>

@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/temas.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+
   <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
 </head>
 <body>
@@ -51,6 +52,44 @@
       <p id="msgPagamento" class="msg-pagamento"></p>
     </section>
   </main>
+
+  <!-- Modal Login / Registro -->
+  <div id="modalAuth" class="modal-overlay hidden">
+    <div class="modal-content">
+      <button id="closeModal" class="close-btn">&times;</button>
+
+      <div class="tabs">
+        <button id="tabLogin" class="active">Login</button>
+        <button id="tabRegistro">Registrar</button>
+      </div>
+
+      <div id="loginForm" class="auth-form active">
+        <form id="formLoginModal">
+          <label for="loginEmail">E-mail</label>
+          <input type="email" id="loginEmail" required />
+          <label for="loginSenha">Senha</label>
+          <input type="password" id="loginSenha" required />
+          <button type="submit" class="btn-pagar">Entrar</button>
+          <p id="msgLoginModal" class="msg-error"></p>
+        </form>
+      </div>
+
+      <div id="registroForm" class="auth-form">
+        <form id="formRegistroModal">
+          <label for="regNome">Nome Completo</label>
+          <input type="text" id="regNome" required />
+          <label for="regEmail">E-mail</label>
+          <input type="email" id="regEmail" required />
+          <label for="regSenha">Senha</label>
+          <input type="password" id="regSenha" required />
+          <label for="regConfirmSenha">Confirmar Senha</label>
+          <input type="password" id="regConfirmSenha" required />
+          <button type="submit" class="btn-pagar">Registrar</button>
+          <p id="msgRegistroModal" class="msg-error"></p>
+        </form>
+      </div>
+    </div>
+  </div>
 
   <script src="js/pagamento.js"></script>
 </body>
